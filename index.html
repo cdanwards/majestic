@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Majestic Thai</title>
+  <link rel="stylesheet" href="syles/main.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <h1 class="app-title">Majestic Thai</h1>
+    <div class="header-container">
+      <ul class="js-header">
+        <li class="header-li apps">Apps</li>
+        <li class="header-li entrees">Entrees</li>
+        <li class="header-li salads">Salads</li>
+        <li class="header-li desserts">Desserts</li>
+
+      </ul>
+
+    </div>
+    <div class="left-container">
+      <h2>Menu</h2>
+      <ul>
+      </ul>
+    </div>
+    <div class="right-container">
+      <h2>Order</h2>
+      <ul>
+      </ul>
+    </div>
+
+    <script type="text/template" id="item-detail-template">
+      <%= itemName %> <%= itemPrice %>
+      <p><%= itemDescription %></p>
+      <button>Add</button>
+    </script>
+
+    <script type="text/template" id="order-detail-template">
+
+      <h3>Order Info</h3>
+      <p>Total: $20.35</p>
+      <button>Checkout</button>
+
+    </script>
+
+
+
+
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/backbone/backbone.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+</html>
